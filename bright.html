@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bright lopes</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel=" stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/em.css">
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+
+    <body>
+        <div class=" container">
+            <h1 class=" card-header"
+                style="text-align: center; border:solid  1px rgb(39, 90, 90);border-radius: 200px; ">Bright
+                loupes</h1>
+
+            <div class="input-group  py-3 mt-3 mb-3  ">
+                <input id="uname" type="text" class="form-control p-2"
+                    placeholder="Username">
+                <div class="form-floating">
+                    <select class="form-select" id="loupes" name="sellist">
+                        <option>1</option>
+                        <option>2</option>
+
+                    </select>
+                    <label for="sel1" class="form-label">Loupes</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-select" id="led" name="sellist">
+                        <option>1</option>
+                        <option>2</option>
+
+                    </select>
+                    <label for="sel1" class="form-label">LED light</label>
+                </div>
+
+                <input id="price" type="number" class="form-control"
+                    placeholder="Price">
+
+            </div>
+            <button id="save" type="button" class="btn btn-primary mb-2"
+                style="width: 100%;">save</button><br>
+            <form class="d-flex p-1 mb-2">
+                <input onkeyup="searchdata(this.value)" id="search"
+                    class="form-control me-2" type="text"
+                    placeholder="Search">
+                <button onclick="getsearchmood(this.id)" id="searchname"
+                    class="btn btn-primary"
+                    type="button">Search</button>
+            </form>
+            <div class="table-responsive  ">
+                <table class="table table-bordered border-light border-3">
+                    <thead class="thead">
+                        <tr>
+                            <th>ID</th>
+                            <th>Username</th>
+                            <th>Loupes</th>
+                            <th>LED light</th>
+                            <th>Price</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <script src="js/bright.js"></script>
+
+            <script src="js/bootstrap.js"></script>
+            <script src="js/jquery-3.7.1.min.js.js"></script>
+            <script src="js/popper.min.js"></script>
+        </div>
+    </body>
+
+</html>
